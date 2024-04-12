@@ -1,0 +1,240 @@
+:root {
+    --primary-color: black; /* blk */
+    --secondary-color: white; /* White */
+}
+/* Global styles */
+body {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; /* Bigger font size */
+    line-height: 1.6; /* Increased line height for better readability */
+}
+.navbar {
+    margin-bottom: 5vh;
+    background: linear-gradient(to right, #00008B, #01013B);
+    color: #fff;
+    text-align: center;
+}
+h2, h3{
+font-size: x-large;
+font-weight: bold;
+color: black;
+
+}
+
+
+#todayDate {
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+.weather-today {
+    margin-top: 2vh;
+}
+/* Left Rail - Enter city to get Weather */
+.col-md-3.card.card-search {
+    float: left;
+}
+/* Center Content Area */
+.col-md-9#weather-today {
+    float: right;
+}
+/* Today's Weather Card */
+.card.todayBlock {
+    margin-bottom: 2vh;
+    border: none;
+    color:black;
+}
+.card.todayBlock .card-title {
+    color: var(--primary-color);
+    font-size: 1.5rem; /* Bigger title font size */
+}
+/* Forecast 5 Day Section */
+.container .row .col-sm-3 {
+    float: right;
+    width: 30%;
+   
+}
+.card.card5day {
+    height: fit-content;
+    font-size: 1rem; /* Bigger font size */
+    margin-top: 0.2vh;
+    margin-left: 5%;
+    background-color: #01013B;
+}
+.card.card5day h6,
+.card.card5day p {
+    color: white;
+    font-size: 1rem; /* Bigger font size */
+}
+
+.container mt-5  {
+background-color: #01013B;
+color: white;
+
+
+}
+
+.card-body {
+    border: black;
+    border-style: solid;
+
+}
+
+
+/* Button Styles */
+#btn .btn-success{
+    width: 300px;
+    height: 50px;
+
+}
+
+
+
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem; /* Bigger font size */
+    font-weight: bold;
+    width: fit-content;
+    margin: 1vh 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #337CC9; /* Darker blue */
+}
+
+
+.input-group-append .btn  {
+   background-color:  #007BFF;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+
+
+/* UV Index Colors */
+.severeLevel {
+    padding: 4px;
+    background-color: rgba(255, 0, 0, 0.5); /* Transparent red background */
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+}
+.moderateLevel {
+    padding: 4px;
+    background-color: rgba(255, 255, 0, 0.5); /* Transparent yellow background */
+    font-weight: 900;
+    border-radius: 5px;
+}
+.favorableLevel {
+    padding: 4px;
+    background-color: rgba(0, 128, 0, 0.5); /* Transparent green background */
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+
+#popular-cities1 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#popular-cities2 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#popular-cities3 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+#popular-cities4 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#popular-cities5 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#popular-cities6 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#popular-cities7 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#popular-cities8 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+    justify-content: space-around;
+    margin: 10px 0;
+}

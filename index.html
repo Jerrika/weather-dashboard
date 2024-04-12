@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ff971e226.js" crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+    <meta name="description" content="Weather application made for UCB's bootcamp with Open Weather API.">
+    <link rel="shortcut icon" href="./assets/images/wind.png">
+    <title>Open Weather API Application</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Nav Header-->
+        <nav class="navbar navbar-dark bg-dark">
+            <h1 class="display-4 mx-auto text-white">Weather Dashboard</h1>
+        </nav>
+        <!--Main Container Start-->
+        <main class="container-fluid">
+            <div class="row">
+                <!--Left column-->
+                <div class="col-md-3 card card-search">
+                    <h2 class="text-center">Search for a City:</h2>
+                    <!--Search Form-->
+                    <div class="input-group mb-3">
+                        <form id="formCity" class="w-100">
+                            <input name="city" id="city" type="text" autofocus="true" placeholder="Search your city" class="form-control" />
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-success"><i class="fas fa-search"></i> Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Past City Search Buttons -->
+                    <div class="btn-group-vertical" id="buttons">
+                        <button id="popular-cities1">Atlanta</button>
+                        <button id="popular-cities2">Denver</button>
+                        <button id="popular-cities3">Seattle</button>
+                        <button id="popular-cities4">San Francisco</button>
+                        <button id="popular-cities5">Orlando</button>
+                        <button id="popular-cities6">New York</button>
+                        <button id="popular-cities7">Chicago</button>
+                        <button id="popular-cities8">Austin</button>
+                    </div>
+                </div>
+                <!--End Column -->
+                <!--Central Content Area-->
+                <!--Today's Weather-->
+                <div class="col-md-9" id="weather-today">
+                    <h3 class="text-center mb-4">Today's Weather</h3>
+                    <div class="card todayBlock mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title"><span id="searchedCity"></span></h5>
+                            <h6 class="card-subtitle mb-4"><span id="todayDate"></span></h6>
+                            <img id="todayIcon" class="mx-auto d-block" src="">
+                            <p class="card-text"><strong>Temperature:</strong> <span id="todayTemp"></span> °F</p>
+                            <p class="card-text"><strong>Humidity:</strong> <span id="todayHumidity"></span>%</p>
+                            <p class="card-text"><strong>Wind Speed:</strong> <span id="todayWind"></span> mph</p>
+                        </div>
+                    </div>
+                    <!--End Today's Weather Section-->
+                    <!--Forecast 5 Day Section-->
+                    <div class="container mt-5">
+                        <h3 class="text-center mb-4">5-Day Forecast</h3>
+                        <div class="row" id="forecast5day">
+                            <!-- Forecast data will be populated here by JavaScript -->
+                        </div>
+                    </div>
+                    <!--End 5 day Container -->
+                </div>
+                <!--End Center Container -->
+            </div>
+            <!--End Main Row -->
+        </main>
+        <!--End Main Container -->
+        <!--Scripts: Moment, jQuery, JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        <script src="logic.js"></script>
+    </div>
+    <script src="script.js"></script>
+    <!--End Wrapper -->
+</body>
+
+</html>
